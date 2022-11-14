@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -24,8 +23,6 @@ hr {
     width: 48px; 
     height: 48px;
     border: 1px solid lightgray;
-
-    /* Text */
     font-size: 20px;
     font-weight: bold;
     display: flex;
@@ -47,8 +44,6 @@ hr {
     height: 44px;
     border: 1px solid black;
     margin: 2px;
-
-    /* Text */
     font-size: 20px;
     font-weight: bold;
     display: flex;
@@ -64,10 +59,10 @@ hr {
     background-color: whitesmoke;
 }
 
-.horizontal-line {
+.right-line {
     border-bottom: 1px solid black;
 }
 
-.vertical-line {
+.bottom-line {
     border-right: 1px solid black;
 }

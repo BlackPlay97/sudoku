@@ -52,10 +52,10 @@ function setGame() {
         tile.classList.add("tile-start");
       }
       if (r == 2 || r == 5) {
-        tile.classList.add("horizontal-line");
+        tile.classList.add("right-line");
       }
       if (c == 2 || c == 5) {
-        tile.classList.add("vertical-line");
+        tile.classList.add("bottom-line");
       }
       tile.addEventListener("click", selectTile);
       tile.classList.add("tile");
@@ -78,9 +78,9 @@ function selectTile() {
       return;
     }
 
-    let coords = this.id.split("-");
-    let r = parseInt(coords[0]);
-    let c = parseInt(coords[1]);
+    let position = this.id.split("-");
+    let r = parseInt(position[0]);
+    let c = parseInt(position[1]);
     //check
     if (solution[r][c] == numSelected.id) {
       this.innerText = numSelected.id;
